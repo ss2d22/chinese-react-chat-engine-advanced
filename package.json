@@ -1,5 +1,5 @@
 {
-  "version": "0.1.28",
+  "version": "0.1.29",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -37,17 +37,20 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "react-chat-engine-advanced",
-  "author": "Adam La Morre",
-  "repository": "chatengine-io/react-chat-engine-advanced",
-  "module": "dist/react-chat-engine-advanced.esm.js",
+  "name": "@ss2d22/chinese-react-chat-engine-advanced",
+  "author": "Sriram Sundar",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ss2d22/chinese-react-chat-engine-advanced"
+  },
+  "module": "dist/chinese-react-chat-engine-advanced.esm.js",
   "size-limit": [
     {
-      "path": "dist/react-chat-engine-advanced.cjs.production.min.js",
+      "path": "dist/chinese-react-chat-engine-advanced.cjs.production.min.js",
       "limit": "350 KB"
     },
     {
-      "path": "dist/react-chat-engine-advanced.esm.js",
+      "path": "dist/chinese-react-chat-engine-advanced.esm.js",
       "limit": "100 KB"
     }
   ],
@@ -84,5 +87,18 @@
     "nextjs-websocket": "^1.0.8",
     "react-grid-system": "^7.3.2",
     "react-scroll": "^1.8.4"
-  }
+  },
+  "description": "a chinese translation of react-chat-engine-advanced",
+  "keywords": [
+    "react-chat-engine",
+    "chinese",
+    "translation",
+    "react",
+    "chat",
+    "serverless"
+  ],
+  "bugs": {
+    "url": "https://github.com/ss2d22/chinese-react-chat-engine-advanced/issues"
+  },
+  "homepage": "https://github.com/ss2d22/chinese-react-chat-engine-advanced#readme"
 }
