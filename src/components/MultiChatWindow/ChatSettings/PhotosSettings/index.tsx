@@ -48,7 +48,7 @@ export const PhotosSettings: React.FC<PhotosSettingsProps> = (
   return (
     <Dropdown
       id="ce-settings-photos-dropdown"
-      label="Photos"
+      label="照片"
       style={{ ...styles.style, ...props.style }}
     >
       {renderImages(chat.attachments)}

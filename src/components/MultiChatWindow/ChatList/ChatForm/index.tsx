@@ -39,7 +39,7 @@ export const ChatForm: React.FC<ChatFormProps> = (props: ChatFormProps) => {
           ...props.titleStyle,
         }}
       >
-        My Chats
+        我的聊天
       </span>
 
       <Button
@@ -57,7 +57,7 @@ export const ChatForm: React.FC<ChatFormProps> = (props: ChatFormProps) => {
         <Input
           autoFocus
           value={value}
-          label="Chat Title"
+          label="聊天标题"
           className="ce-chat-form-input"
           style={{
             ...styles.inputStyle,

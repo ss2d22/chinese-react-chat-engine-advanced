@@ -28,10 +28,10 @@ const renderLoading = () => {
 
 const getDescription = (chat: ChatObject): string => {
   if (!chat.last_message.id) {
-    return 'Say hello!';
+    return '打个招呼！';
   }
   if (chat.last_message.text === null) {
-    return `${chat.last_message.attachments.length} attachments`;
+    return `${chat.last_message.attachments.length} 附件`;
   }
   return chat.last_message.text;
 };

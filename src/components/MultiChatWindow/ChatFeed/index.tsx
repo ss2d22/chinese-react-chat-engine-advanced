@@ -27,7 +27,7 @@ const getDescription = (
     const formattedDateTime = formatDateTime(dateTime);
     return `Active ${formattedDateTime}`;
   } else {
-    return 'Say hello!';
+    return '打个招呼';
   }
 };
 
@@ -41,7 +41,7 @@ export const ChatFeed: React.FC<ChatFeedProps> = (props: ChatFeedProps) => {
   const title = props.isLoading ? (
     <Spinner />
   ) : !chat ? (
-    'Create a chat!'
+    '创建聊天'
   ) : chat.is_direct_chat && otherPerson ? (
     otherPerson.person.username
   ) : (
@@ -58,7 +58,7 @@ export const ChatFeed: React.FC<ChatFeedProps> = (props: ChatFeedProps) => {
         title={title}
         description={
           props.isLoading
-            ? 'Loading...'
+            ? '加载。。。'
             : getDescription(chat, props.timezoneOffset)
         }
         renderChatHeader={props.renderChatHeader}
@@ -96,7 +96,7 @@ export const ChatFeed: React.FC<ChatFeedProps> = (props: ChatFeedProps) => {
       )}
 
       <MessageForm
-        label="Send a message..."
+        label="发送消息。。。"
         username={props.username}
         onSubmit={props.onMessageFormSubmit}
         renderMessageForm={props.renderMessageForm}

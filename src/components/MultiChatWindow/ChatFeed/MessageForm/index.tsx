@@ -196,7 +196,7 @@ export const MessageForm: React.FC<MessageFormProps> = (
           ...props.sendButtonStyle,
         }}
       >
-        Send
+        发送
       </div>
     </div>
   );

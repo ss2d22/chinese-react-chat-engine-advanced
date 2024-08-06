@@ -16,7 +16,7 @@ export const OptionsSettings: React.FC<OptionsSettingsProps> = (
   return (
     <Dropdown
       id="ce-settings-options-dropdown"
-      label="Options"
+      label="选项"
       style={{ ...styles.style, ...props.style }}
     >
       <Button
@@ -31,7 +31,7 @@ export const OptionsSettings: React.FC<OptionsSettingsProps> = (
           ...props.deleteChatButtonStyle,
         }}
       >
-        Delete this Chat
+        删除此聊天
       </Button>
     </Dropdown>
   );

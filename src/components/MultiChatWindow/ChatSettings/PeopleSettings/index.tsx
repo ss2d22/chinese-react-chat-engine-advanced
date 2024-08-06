@@ -86,13 +86,13 @@ export const PeopleSettings: React.FC<PeopleSettingsProps> = (
   return (
     <Dropdown
       id="ce-settings-people-dropdown"
-      label="Members"
+      label="成员"
       style={{ ...styles.style, ...props.style }}
     >
       {renderChatPeople(chat.people)}
 
       <Autocomplete
-        label="Add Member"
+        label="添加成员"
         options={peopleToInvite}
         renderOption={renderChatPeopleOption}
         style={{ ...styles.addMemberStyle, ...props.addMemberStyle }}

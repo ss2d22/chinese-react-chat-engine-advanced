@@ -24,7 +24,7 @@ export const WelcomeGif: React.FC<WelcomeGifProps> = (
         className="ce-ice-breaker-text"
         style={{ ...styles.textStyle, ...props.textStyle }}
       >
-        No messages here yet...
+        这里还没有消息。。。
       </div>
     </div>
   );
