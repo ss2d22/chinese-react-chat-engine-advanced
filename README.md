@@ -4,7 +4,9 @@
 
 您还可以使用它来修改welcome.gif文本，因为自定义呈现不起作用，或者只将所有文本修改为diff语言/you can also use this to modify the welcome.gif text as the custom render does not work or to just modify all the text to a diff language
 
-除了最上面的两句英语之外，整个readMe都是中文的/This entire readMe is in chinese other than these two sentences at the top in english
+除了最上面的两句英语之外，整个readMe都是中文的/This entire readMe is in chinese other than these two sentences at the top in english and you only need to do the steps below once when you share your project repository to anyone the patch is auto applied when they 'npm intstall' or when you 'npm install' again after deleting 'node_modules' as long as you do not delete the automatically generated 'patche' folder
+
+###### 当您将项目存储库共享给任何人时，您只需要执行以下步骤一次，只要不删除自动生成的“patche”文件夹，当他们使用“npm intstall”或删除“node_modules”后再次使用“npm install”时，补丁就会自动应用
 
 ### 1) 克隆存储库
 
@@ -14,7 +16,7 @@ git clone https://github.com/ss2d22/chinese-react-chat-engine-advanced.git
 cd chinese-react-chat-engine-advanced
 ```
 
-### 2)（如果你在中国）: 
+### 2) 为npm添加镜像（如果你在中国）: 
 
 #### 在项目的根目录下创建一个.npmrc文件，并粘贴以下内容：
   ```diff
@@ -118,6 +120,8 @@ cd ../../
 
 npx patch-package react-chat-engine-advanced
 ```
+
+不要删除自动生成的“patches”文件夹
 
 ### 10) 清除缓存并重新启动项目
 
