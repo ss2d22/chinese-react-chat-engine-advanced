@@ -1,10 +1,10 @@
-# 一个叉的 'react-chat-engine-advanced' 文本已翻译成中文 
+# 一个叉的 'react-chat-engine-advanced' 文本已翻译成中文
 
 ## 如何使用
 
-您还可以使用它来修改welcome.gif文本，因为自定义呈现不起作用，或者只将所有文本修改为diff语言/you can also use this to modify the welcome.gif text as the custom render does not work or to just modify all the text to a diff language
+您还可以使用它来修改 welcome.gif 文本，因为自定义呈现不起作用，或者只将所有文本修改为 diff 语言/you can also use this to modify the welcome.gif text as the custom render does not work or to just modify all the text to a diff language
 
-除了最上面的两句英语之外，整个readMe都是中文的/This entire readMe is in chinese other than these two sentences at the top in english and you only need to do the steps below once when you share your project repository to anyone the patch is auto applied when they 'npm intstall' or when you 'npm install' again after deleting 'node_modules' as long as you do not delete the automatically generated 'patche' folder
+除了最上面的两句英语之外，整个 readMe 都是中文的/This entire readMe is in chinese other than these two sentences at the top in english and you only need to do the steps below once when you share your project repository to anyone the patch is auto applied when they 'npm intstall' or when you 'npm install' again after deleting 'node_modules' as long as you do not delete the automatically generated 'patche' folder
 
 ###### 当您将项目存储库共享给任何人时，您只需要执行以下步骤一次，只要不删除自动生成的“patche”文件夹，当他们使用“npm intstall”或删除“node_modules”后再次使用“npm install”时，补丁就会自动应用
 
@@ -16,10 +16,11 @@ git clone https://github.com/ss2d22/chinese-react-chat-engine-advanced.git
 cd chinese-react-chat-engine-advanced
 ```
 
-### 2) 为npm添加镜像（如果你在中国）: 
+### 2) 为 npm 添加镜像（如果你在中国）:
 
-#### 在项目的根目录下创建一个.npmrc文件，并粘贴以下内容：
-  ```diff
+#### 在项目的根目录下创建一个.npmrc 文件，并粘贴以下内容：
+
+```diff
 + registry=https://registry.npm.taobao.org/
 + disturl=https://npm.taobao.org/dist
 + chromedriver_cdnurl=http://cdn.npm.taobao.org/dist/chromedriver
@@ -46,8 +47,8 @@ node_inspector_cdnurl=https://npm.taobao.org/mirrors/node-inspector
 
 ```
 
-
 ### 3) 安装依赖项
+
 ```
 npm i
 ```
@@ -58,41 +59,50 @@ npm i
 npm run build
 ```
 
-如果不起作用，请删除dist文件夹，然后重试
+如果不起作用，请删除 dist 文件夹，然后重试
 
 ### 5) 转到要在其中使用此功能的项目的文件夹
 
 ```
 cd /路径/到/你的/项目
-npm install react-chat-engine-advanced --save 
+npm install react-chat-engine-advanced --save
 ```
 
 例子:
+
 ```
 cd /Users/sriram/developer/medai/medai
-npm install react-chat-engine-advanced --save 
+npm install react-chat-engine-advanced --save
 ```
+
 在这里进入你自己的项目，你的道路会有所不同
 
 ### 6) 安装"patch-package”包裹
+
 ```
 npm i patch-package
 ```
 
-在package.json中 : 
+在 package.json 中 :
+
 ```diff
  "scripts": {
 +  "postinstall": "patch-package"
  }
 ```
+
 要复制和粘贴：
+
 ```
 "postinstall": "patch-package"
 ```
-### 7) cd放入模块文件夹
+
+### 7) cd 放入模块文件夹
+
 ```
 cd node_modules/react-chat-engine-advanced
 ```
+
 ### 8) 更新此文件夹中的文件
 
 ```
@@ -108,9 +118,9 @@ cp -R /路径/到/chinese-react-chat-engine-advanced/src ./
 ```
 rm -rf dist src
 
-cp -R /Users/sriram/developer/chinese-react-chat-engine-advanced/dist ./   
+cp -R /Users/sriram/developer/chinese-react-chat-engine-advanced/dist ./
 
-cp -R /Users/sriram/developer/chinese-react-chat-engine-advanced/src ./   
+cp -R /Users/sriram/developer/chinese-react-chat-engine-advanced/src ./
 ```
 
 ### 9) 应用并保存补丁
@@ -125,7 +135,7 @@ npx patch-package react-chat-engine-advanced
 
 ### 10) 清除缓存并重新启动项目
 
-根据您使用的react框架，您可能需要再次删除`node_modules`文件夹和`npm install`
+根据您使用的 react 框架，您可能需要再次删除`node_modules`文件夹和`npm install`
 
 无论框架如何，最简单的方法是：
 
@@ -138,11 +148,11 @@ npm install
 ### 11) 重新启动“dev server”
 
 例子：
+
 ```
 npm run dev
 ```
 
-              
 # 原始存储库中的自述文件翻译成中文如下：
 
 <p align="center" >
@@ -159,18 +169,18 @@ npm run dev
 
 ## 聊天引擎
 
-聊天引擎是一个开发者友好的聊天UI工具包.
+聊天引擎是一个开发者友好的聊天 UI 工具包.
 
 在以下网址设置免费计划 [chatengine.io](https://chatengine.io)
 
 ## 特征
 
-- Typescript (从2.0.0开始)
+- Typescript (从 2.0.0 开始)
 - 注册/身份验证
 - 设置聊天
 - 发送消息
 - 发送文件和照片
-- 通过Sockets订阅聊天
+- 通过 Sockets 订阅聊天
 - 邀请/删除聊天成员
 - 无尽的聊天滚动
 - 无尽的消息滚动
@@ -182,7 +192,7 @@ npm run dev
 
 ## 快速入门
 
-在3分钟内将无服务器聊天添加到您的React应用程序中。
+在 3 分钟内将无服务器聊天添加到您的 React 应用程序中。
 
 1. 注册后，在以下网址创建**project**和**user**[chatengine.io](https://chatengine.io)
 
@@ -224,7 +234,7 @@ export function App() {
 
 ## Props
 
-- **`projectId`** _(String 必修的)_ - [chatengine.io](https://chatengine.io) 项目的公共API密钥
+- **`projectId`** _(String 必修的)_ - [chatengine.io](https://chatengine.io) 项目的公共 API 密钥
 - **`username`** _(String 必修的)_ - 此项目中人员的用户名
 - **`secret`** _(String 必修的)_ - 为此人设置一个秘密并使用它进行身份验证。
 - **`onConnect`** (Function) - 连接/身份验证完成时回调
@@ -239,8 +249,8 @@ export function App() {
 - **`onNewMessage`** _(Function)_ - 当一个人在聊天中发布新消息时进行回调
 - **`onEditMessage`** _(Function)_ - 当一个人在聊天中编辑新消息时进行回调
 - **`onDeleteMessage`** _(Function)_ - 当一个人删除其中一个聊天中的新消息时进行回调
-- **`hideUI`** _(Boolean)_ - 隐藏自定义实现的所有UI组件（警告：高级）
+- **`hideUI`** _(Boolean)_ - 隐藏自定义实现的所有 UI 组件（警告：高级）
 
 ## 警告
 
-`react-chat-engine-advanced` 不适用于react StrictMode。请从您的项目中删除 `<React.StrictMode>`。
+`react-chat-engine-advanced` 不适用于 react StrictMode。请从您的项目中删除 `<React.StrictMode>`。
