@@ -1,8 +1,8 @@
-# 一个叉的 'react-chat-engine-advanced' 文本已翻译成中文
+# 一个将文本翻译成中文的 'react-chat-engine-advanced' 的分叉，
 
-存储库链接：[https://github.com/ss2d22/chinese-react-chat-engine-advanced](https://github.com/ss2d22/chinese-react-chat-engine-advanced)
+repo链接：[https://github.com/ss2d22/chinese-react-chat-engine-advanced](https://github.com/ss2d22/chinese-react-chat-engine-advanced)
 
-原始存储库链接：[https://github.com/chatengine-io/react-chat-engine-advanced](https://github.com/chatengine-io/react-chat-engine-advanced)
+原始repo链接：[https://github.com/chatengine-io/react-chat-engine-advanced](https://github.com/chatengine-io/react-chat-engine-advanced)
 
 ## 如何使用
 
@@ -28,15 +28,15 @@ import {
 ## 手动安装 (可以自定义更多)
 
 
-您还可以使用它来修改 welcome.gif 文本，因为自定义呈现不起作用，或者只将所有文本修改为 diff 语言/you can also use this to modify the welcome.gif text as the custom render does not work or to just modify all the text to a diff language
+您还可以使用它来修改 welcome.gif 文本，因为自定义呈现不起作用，或者只将所有文本修改为另一个语言/you can also use this to modify the welcome.gif text as the custom render does not work or to just modify all the text to a diff language
 
 除了最上面的两句英语之外，整个 readMe 都是中文的/This entire readMe is in chinese other than these two sentences at the top in english and you only need to do the steps below once when you share your project repository to anyone the patch is auto applied when they 'npm intstall' or when you 'npm install' again after deleting 'node_modules' as long as you do not delete the automatically generated 'patche' folder
 
-###### 当您将项目存储库共享给任何人时，您只需要执行以下步骤一次，只要不删除自动生成的“patche”文件夹，当他们使用“npm intstall”或删除“node_modules”后再次使用“npm install”时，补丁就会自动应用
+###### 当您将项目repo共享给任何人时，您只需要执行以下步骤一次，只要不删除自动生成的“patches”文件夹，当他们使用“npm intstall”或删除“node_modules”后再次使用“npm install”时，补丁就会自动应用
 
 
 
-### 1) 克隆存储库
+### 1) 克隆repo
 
 ```
 git clone https://github.com/ss2d22/chinese-react-chat-engine-advanced.git
@@ -103,7 +103,7 @@ cd /Users/sriram/developer/medai/medai
 npm install react-chat-engine-advanced --save
 ```
 
-在这里进入你自己的项目，你的道路会有所不同
+在这里进入你自己的项目，你的文件路径会有所不同
 
 ### 6) 安装"patch-package”包裹
 
@@ -218,7 +218,7 @@ npm run dev
 - 使用 [npm](https://www.npmjs.com/#getting-started): `npm install react-chat-engine-advanced --save`
 - 使用 [Yarn](https://yarnpkg.com/): `yarn add react-chat-engine-advanced`
 
-## 快速入门
+## 快速使用
 
 在 3 分钟内将无服务器聊天添加到您的 React 应用程序中。
 
@@ -232,7 +232,7 @@ npm run dev
 
 5. 声明 `const props = useMultiChatLogic(projectId, username, secret);` 并通过返回 `props` 对象进入 `MultiChatWindow` 和 `MultiChatSocket`.
 
-6. 瞧！你完了
+6. 瞧！轻松搞定
 
 示例实现 ⬇️
 
@@ -262,9 +262,9 @@ export function App() {
 
 ## Props
 
-- **`projectId`** _(String 必修的)_ - [chatengine.io](https://chatengine.io) 项目的公共 API 密钥
-- **`username`** _(String 必修的)_ - 此项目中人员的用户名
-- **`secret`** _(String 必修的)_ - 为此人设置一个秘密并使用它进行身份验证。
+- **`projectId`** _(String 必须)_ - [chatengine.io](https://chatengine.io) 项目的公共 API 密钥
+- **`username`** _(String 必须)_ - 此项目中人员的用户名
+- **`secret`** _(String 必须)_ - 为此人设置一个秘密并使用它进行身份验证。
 - **`onConnect`** (Function) - 连接/身份验证完成时回调
 - **`onFailAuth`** (Function) - 连接/身份验证失败时回调
 - **`onGetChats`** _(Function)_ 当该人获取他们的聊天数组时进行回调
