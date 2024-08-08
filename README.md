@@ -1,4 +1,4 @@
-# 一个将文本翻译成中文的 'react-chat-engine-advanced' 的分叉，
+# 一个将文本翻译成中文的 'react-chat-engine-advanced' 的分叉
 
 repo链接：[https://github.com/ss2d22/chinese-react-chat-engine-advanced](https://github.com/ss2d22/chinese-react-chat-engine-advanced)
 
